@@ -29,7 +29,7 @@ public class AiController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("/stream")
     public Flux<String> streamAi(
             @RequestParam(value = "query", required = false, defaultValue = "how are you? how can you help me?") String query
 
